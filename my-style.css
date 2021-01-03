@@ -29,15 +29,15 @@ transition: all 1.5s ease;
 .cursor{
     display: inline-block;
     width: 3px;
-    background-color: #cccccc;
+    background-color: #000;
     margin-left: 0.2rem;
     animation: blink is infinite;
 }
 
 @keyframes blink{
-    0%{ background-color: #ccc; }
-    49%{ background-color: #ccc; }
+    0%{ background-color: #000; }
+    49%{ background-color: #000; }
     50%{ background-color: transparent; }
     99%{ background-color: transparent; }
-    100%{ background-color: #ccc;}
+    100%{ background-color: #000; }
 }
