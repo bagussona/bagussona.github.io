@@ -23,13 +23,13 @@ transition: all 1.5s ease;
 
 .typed-text{
     font-weight: normal;
-    color: darkgoldenrod;
+    color: #2600ff;
 }
 
 .cursor{
     display: inline-block;
     width: 3px;
-    background-color: #ccc;
+    background-color: #000000;
     margin-left: 0.2rem;
     animation: blink is infinite;
 }
