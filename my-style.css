@@ -20,3 +20,16 @@ transition: all 1.5s ease;
 .inner:hover img{
     transform: scale(1.5);
 }
+
+.typed-text{
+    font-weight: normal;
+    color: darkgoldenrod;
+}
+
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: 0.2rem;
+    animation: blink is infinite;
+}
