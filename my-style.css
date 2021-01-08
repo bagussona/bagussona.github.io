@@ -1,9 +1,9 @@
 .jumbotron {
     padding: 5rem 2rem;
     margin-bottom: 1rem;
-    background-color: lightgray;
+    background-color: #bdc3c7;
     border-radius: .4rem;  
-  }
+}
 
 .section{
     min-height: 320px;
@@ -45,3 +45,95 @@ transition: all 1.5s ease;
     font-weight: 200;
     color: #2600ff;
 }
+
+.footer{
+    padding: 0rem 1rem;
+    background: #2f3542;
+    font-weight: normal;
+    color: #ecf0f1;
+}
+
+
+
+
+/* Punya Orang wkwkw */
+
+
+
+.Contact-body{
+    text-align: center;
+   background-color: #dfe6e9;
+   width: 100%;
+   height: 100%;
+   padding: 30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  
+  .card-contact{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .card-contact:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.6);
+  }
+  
+  .card-contact p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .card-contact:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+  
+  
+  @media screen and (max-width:800px) {
+    .contact-info{
+      flex-direction: column;
+    }
+    .card-contact{
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+  }
+  
