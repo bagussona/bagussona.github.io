@@ -58,7 +58,23 @@ transition: all 1.5s ease;
 
 /* Punya Orang wkwkw */
 
+.About-body{
+  text-align: center;
+ width: 100%;
+ height: 100%;
+ padding: 30px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
 
+.My-gallery-body{
+  text-align: center;
+ width: 100%;
+ height: 100%;
+ padding: 30px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
 
 .Contact-body{
     text-align: center;
