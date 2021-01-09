@@ -1,5 +1,5 @@
 .jumbotron {
-    padding: 5rem 2rem;
+    padding: 6rem 3rem;
     margin-bottom: 1rem;
     background-color: #bdc3c7;
     border-radius: .4rem;  
@@ -62,7 +62,7 @@ transition: all 1.5s ease;
   text-align: center;
  width: 100%;
  height: 100%;
- padding: 30px;
+ padding: 60px;
  margin-top: 10px;
  margin-bottom: 10px;
 }
@@ -71,17 +71,17 @@ transition: all 1.5s ease;
   text-align: center;
  width: 100%;
  height: 100%;
- padding: 30px;
+ padding: 60px;
  margin-top: 10px;
  margin-bottom: 10px;
 }
 
 .Contact-body{
     text-align: center;
-   background-color: #dfe6e9;
+  background-color: #bdc3c7;
    width: 100%;
    height: 100%;
-   padding: 30px;
+   padding: 60px;
    margin-top: 10px;
    margin-bottom: 10px;
 }
@@ -97,11 +97,11 @@ transition: all 1.5s ease;
   
   
   .card-contact{
-    background: #2f3542;
+    background: #2F4F4F;
     padding: 0 20px;
     margin: 0 10px;
     width: calc(33% - 20px);
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +112,7 @@ transition: all 1.5s ease;
   
   .card-icon{
     font-size: 28px;
-    background: #ff6348;
+    background: #FEE715FF;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -123,7 +123,7 @@ transition: all 1.5s ease;
   
   .card-contact:hover .card-icon{
     background: none;
-    color: #ff6348;
+    color: #FEE715FF;
     transform: scale(1.6);
   }
   
