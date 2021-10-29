@@ -43,3 +43,53 @@ html, body {
     height: 30px;
     line-height: 30px;
 }
+
+.lainnya{
+    margin: 20px;
+}
+
+.form-lainnya{
+    display: flex;
+    flex-direction: column;
+}
+
+/* form lainnya
+form forgot password */
+
+.forget-pwd > a{
+    color: #dc3545;
+    font-weight: 500;
+}
+.forget-password .panel-default{
+    padding: 31%;
+    margin-top: -27%;
+}
+.forget-password .panel-body{
+    padding: 15%;
+    margin-bottom: -50%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+img{
+    width:40%;
+    margin-bottom:10%;
+}
+.btnForget{
+    background: #c0392b;
+    border:none;
+}
+.forget-password .dropdown{
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.forget-password .dropdown button{
+    width: 100%;
+}
+.forget-password .dropdown ul{
+    width: 100%;
+}
+
+/* end forgot password */
+
