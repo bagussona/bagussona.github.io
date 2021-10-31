@@ -4,7 +4,7 @@ function displayNextImage() {
 }
 
 function startTimer() {
-    setInterval(displayNextImage, 3000);
+    setInterval(displayNextImage, 2000);
 }
 
 var images = [], x = -1;

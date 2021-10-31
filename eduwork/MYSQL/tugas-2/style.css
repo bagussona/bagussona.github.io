@@ -1,0 +1,30 @@
+.right-side{
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.box{
+    display: block;
+    position: absolute;
+    border: 3px red solid;
+    width: 500px;
+    height: 40px;
+    margin: 185px 0 0 10px;
+}
+
+.box:hover{
+    display: block;
+    position: absolute;
+    border: 3px red solid;
+    width: 850px;
+    height: 130px;
+    margin: 400px 0 0 10px;
+}
+
+.info{
+    padding: 25px;
+    width: 900px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}

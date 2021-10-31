@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Tugas-4</title>
-
-    <!-- font google -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-    
-    <!-- css local -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../style.css">
+
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image1.jpg";
+        images[1] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image2.jpg";
+        images[2] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image3.jpg";
+    </script>
 
 </head>
 <body onload="startTimer()">
@@ -127,5 +139,4 @@
     </center>
     </div>
 </body>
-<script src="/eduwork/HTML-CSS/tugas-4/timer.js"></script>
 </html>

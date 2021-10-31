@@ -1,0 +1,83 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-1{
+    display: block;
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    margin: 150px 0 0 20px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-2{
+    display: block;
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    margin: 150px 0 0 395px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-3{
+    display: block;
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    margin: 150px 0 0 770px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-4{
+    display: block;
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    margin: 150px 0 0 1150px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-5{
+    display: block;
+    position: absolute;
+    height: 30rem;
+    width: 20rem;
+    margin: 150px 0 0 1530px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.header_marhabba{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    width: 100%;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.diketahui, .ditanyakan{
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 30px;
+}

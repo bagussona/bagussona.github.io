@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas-4</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
+    
+</head>
+<body>
+    <a href="/eduwork/index.html">
+        <div class="arrow-back">
+            &#8592;
+        </div>
+    </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="header_marhabba" style="text-align: center; padding: 30px 0 9px 0;">
+                <span style="font-family: 'Nunito', sans-serif; font-size: 40px;"><strong>Tugas-4 CRUD</strong></span>
+            </div>
+            <ul class="timeline">
+                <li>
+                <a target="_blank" href="#">C &#8594; CREATE</a>
+                <p class="float-right">INSERT INTO</p><br>
+                <div class="code">
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>INSERT INTO `categories` (`id`, `category_name`, `category_slug`, `category_description`) VALUES (NULL, 'Bolu Cake', 'bolu-cake', 'roti, bolu, brownies, cake');</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>INSERT INTO `categories` (`id`, `category_name`, `category_slug`, `category_description`) VALUES (NULL, 'Wafer', 'wafer', 'wafer, wafer krim, wafle');</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>INSERT INTO `suppliers` (`id`, `supplier_name`, `supplier_slug`, `supplier_description`) VALUES (NULL, 'Wandi Grosir', 'wandi-grosir', 'Jl. Parang tritis, Kretek Bantul.');</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>INSERT INTO `suppliers` (`id`, `supplier_name`, `supplier_slug`, `supplier_description`) VALUES (NULL, 'Agung Swalayan', 'agung-swalayan', 'Jl. Parang tritis, Kretek Bantul.');</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>INSERT INTO `product_admins` (`id`, `name`, `slug`, `supplier_id`, `category_id`, `price_supplier`, `price`, `stock`, `image`, `created_at`, `updated_at`) VALUES (NULL, 'Chocho Pie', 'chocho-pie', '1', '1', '2000', '2500', '120', 'https://res.cloudinary.com/tookoo-dil/image/upload/v1630556962/product/phpofAdGm.png', '2021-10-30 17:11:39', '2021-10-30 17:11:39');</code><br>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <a href="#">U &#8594; UPDATE</a>
+                <p class="float-right">UPDATE</p><br>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>UPDATE `categories` SET `category_name` = 'Wafer', `category_slug` = 'wafer', `category_description` = 'wafer, wafer krim, wafle' WHERE `categories`.`id` = 2;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>UPDATE `categories` SET `category_name` = 'Bolu Cake', `category_slug` = 'bolu-cake', `category_description` = 'roti, bolu, brownies, cake' WHERE `categories`.`id` = 2;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>UPDATE `suppliers` SET `supplier_name` = 'Agung Swalayan', `supplier_slug` = 'agung-swalayan', `supplier_description` = Jl. Parang tritis, Kretek, Bantul.' WHERE `suppliers`.`id` = 2;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>UPDATE `suppliers` SET `supplier_name` = 'Wandi Grosir', `supplier_slug` = 'wandi-grosir', `supplier_description` = Jl. Parang tritis, Kretek, Bantul.' WHERE `suppliers`.`id` = 2;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>UPDATE `product_admins` SET `stock` = 240 WHERE `product_admins`.`id` = 1;</code><br>
+                </div>
+                </li>
+                <li>
+                <a href="#">D &#8594; DELETE</a>
+                <p class="float-right">DELETE</p><br>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>DELETE FROM `suppliers` WHERE `suppliers`.`id` = 1;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>DELETE FROM `suppliers` WHERE `suppliers`.`id` = 2;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>DELETE FROM `categories` WHERE `categories`.`id` = 1;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>DELETE FROM `categories` WHERE `categories`.`id` = 2;</code><br>
+                </div>
+                <div class="alert dark-light d-flex flex-row">
+                    <div class="quote"></div>
+                    <code>DELETE FROM `product_admins` WHERE `product_admins.`id` = 1;</code><br>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas-6</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
+    
+</head>
+<body>
+    <a href="/eduwork/index.html">
+        <div class="arrow-back">
+            &#8592;
+        </div>
+    </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="header_marhabba" style="text-align: center; padding: 30px 0 9px 0;">
+                <span style="font-family: 'Nunito', sans-serif; font-size: 40px;"><strong>Tugas-6 JOIN</strong></span>
+            </div>
+            <ul class="timeline">
+                <li>
+                <a target="_blank" href="#">R &#8594; JOIN Clause</a>
+                <p class="float-right">SELECT</p><br>
+                <div class="code">
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>SELECT * FROM order_histories JOIN order_details ON order_histories.invoice = order_details.order_id;</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>SELECT * FROM order_histories LEFT JOIN order_details ON order_histories.invoice = order_details.order_id;</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>SELECT * FROM order_histories INNER JOIN order_details ON order_histories.invoice = order_details.order_id;</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>SELECT * FROM order_histories RIGHT JOIN order_details ON order_histories.invoice = order_details.order_id;</code><br>
+                    </div>
+                    <div class="alert dark-light d-flex flex-row">
+                        <div class="quote"></div>
+                        <code>SELECT invoice, order_id AS invoice_id FROM order_histories JOIN order_details ON order_histories.invoice = order_details.order_id;</code><br>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <!-- js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>
