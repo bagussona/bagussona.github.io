@@ -9,22 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../style.css">
-
-    <script type = "text/javascript">
-        function displayNextImage() {
-            x = (x === images.length - 1) ? 0 : x + 1;
-            document.getElementById("img").src = images[x];
-        }
-
-        function startTimer() {
-            setInterval(displayNextImage, 3000);
-        }
-
-        var images = [], x = -1;
-        images[0] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image1.jpg";
-        images[1] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image2.jpg";
-        images[2] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image3.jpg";
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body onload="startTimer()">
@@ -51,13 +36,13 @@
                             <form action="" method="post">
                                 <div class="form-login">
                                     <div class="username">
-                                        <input type="text" style="width: 100%; height: 30px; margin: 2.5px 0; padding: 0 15px; font-size: 11px;;" name="username" id="username" placeholder="Phone number, username, or email">
+                                        <input type="text" style="width: 100%; height: 30px; margin: 2.5px 0; padding: 0 15px; font-size: 11px;" name="username" autocomplete="false" id="username" placeholder="Phone number, username, or email">
                                     </div>
                                     <div class="password">
-                                        <input type="password" style="width: 100%; height: 30px; margin: 2.5px 0; padding: 0 15px; font-size: 11px;;" name="password" id="password" placeholder="Password">
+                                        <input type="password" style="width: 100%; height: 30px; margin: 2.5px 0; padding: 0 15px; font-size: 11px;" name="password" autocomplete="false" id="password" placeholder="Password">
                                     </div>
                                     <div class="submit">
-                                        <button style="width: 100%; height: 30px; color: #fff; background-color: #0074d9; border: 0; cursor: pointer; margin: 10px 0; font-size: 13px;;" type="submit"><strong>Log In</strong></button>
+                                        <button style="width: 100%; height: 30px; cursor: pointer; margin: 10px 0; font-size: 13px;" id="loginButton" type="submit"><strong>Log In</strong></button>
                                     </div>
                                 </div>
                             </form>
@@ -139,4 +124,29 @@
     </center>
     </div>
 </body>
+<script type = "text/javascript">
+    function displayNextImage() {
+        x = (x === images.length - 1) ? 0 : x + 1;
+        document.getElementById("img").src = images[x];
+    }
+
+    function startTimer() {
+        setInterval(displayNextImage, 3000);
+    }
+
+    var images = [], x = -1;
+    images[0] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image1.jpg";
+    images[1] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image2.jpg";
+    images[2] = "/eduwork/HTML-CSS/tugas-4/img/eduwork/image3.jpg";
+
+    $(document).ready(function(){
+    $('#loginButton').attr('disabled',true);
+    $('input').keyup(function(){
+        if($(this).val().length !=0)
+            $('#loginButton').attr('disabled', false);            
+        else
+            $('#loginButton').attr('disabled',true);
+        })
+    });
+</script>
 </html>

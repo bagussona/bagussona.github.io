@@ -1,0 +1,107 @@
+<h2>JavaScript For Loop</h2>
+
+<table id="demo">
+	<tr id="header">
+    	<th>Product</th>
+        <th>Stock</th>
+    </tr>
+</table>
+
+<script>
+
+const table = document.querySelector('table#demo');
+
+const array_of_objects = [
+	{
+    	"product": "cokelat",
+        "stock": 5
+    },
+    {
+    	"product": "strawberry",
+        "stock": 8
+    },
+    {
+    	"product": "nanas",
+        "stock": 9
+    }
+]
+
+console.clear()
+array_of_objects.map(obj => {
+	const rowTable = document.createElement('tr');
+    const productTable = document.createElement('td');
+    const stockTable = document.createElement('td');
+    const test = [productTable, stockTable];
+    
+    productTable.textContent = obj["product"];
+    stockTable.textContent = obj["stock"];
+    
+    for (const el of test) {
+		rowTable.appendChild(el)
+    }
+    
+    // rowTable.appendChild(productTable);
+    // rowTable.appendChild(stockTable);
+    
+    table.appendChild(rowTable);
+});
+console.log(table);
+</script>
+
+
+
+<script>
+
+    const table = document.querySelector('table#table_id');
+
+    const array_of_objects = [
+        {
+            "#": "1",
+            "image": "cokelat",
+            "product": "cokelat",
+            "harga": 5000,
+            "supplier": "wandi grosir",
+            "stock": 5
+        },
+        {
+            "#": "2",
+            "image": "strawberry",
+            "product": "straweberry",
+            "harga": 7500,
+            "supplier": "wandi grosir",
+            "stock": 5
+        },
+        {
+            "#": "3",
+            "image": "anggur",
+            "product": "anggur",
+            "harga": 15000,
+            "supplier": "wandi grosir",
+            "stock": 5
+        }
+    ]
+
+    array_of_objects.map(obj => {
+        const rowTable = document.createElement('tr');
+        const idTable = document.createElement('td');
+        const imageTable = document.createElement('td');
+        const productTable = document.createElement('td');
+        const hargaTable = document.createElement('td');
+        const supplierTable = document.createElement('td');
+        const stockTable = document.createElement('td');
+        const test = [idTable, imageTable, productTable, hargaTable, supplierTable, stockTable];
+        
+        idTable.textContent = obj["#"];
+        imageTable.textContent = obj["image"];
+        productTable.textContent = obj["product"];
+        hargaTable.textContent = obj["harga"];
+        supplierTable.textContent = obj["supplier"];
+        stockTable.textContent = obj["stock"];
+        
+        for (const el of test) {
+            rowTable.appendChild(el)
+        } 
+        table.appendChild(rowTable);
+    });
+
+</script>

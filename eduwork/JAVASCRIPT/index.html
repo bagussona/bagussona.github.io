@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown > a{
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        
+        .dropdown-content > a{
+            width: 100px;
+            text-align: center;
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+<div class="hal-utama posisi ketinggian">
+    <div class="konten">
+        <div class="judul m-b-md">
+            JAVASCRIPT
+        </div>
+    <div class="daftar-tugas">
+        <a href="/eduwork/JAVASCRIPT/tugas-1/tugas-1.html">Tugas-1 &#8594; Pengenalan</a>
+        <a href="#" onclick="toggleInfo()">Tugas 2 &#8594; Looping</a>
+        <a href="/eduwork/HTML-CSS/tugas-4/tugas-4.html">Tugas 3 &#8594; JQuery - Element HTML</a>
+        <div class="dropdown">
+            <a href="#">Tugas 4 &#8594; Contoh Plugin</a>
+            <div class="dropdown-content">
+                <a href="/eduwork/JAVASCRIPT/tugas-4/tabel-1.html">Tabel-1</a><br>
+                <a href="/eduwork/JAVASCRIPT/tugas-4/tabel-2.html">Tabel-2</a>
+            </div>
+          </div>
+    </div>
+    <span id="info" style="visibility: hidden; display: absolute;">Tidak ada Tugas! Hanya Explore</span>
+</div>
+<script>
+    function toggleInfo() {
+    
+        let text = document.getElementById("info");
+    
+        if(text.style.visibility === 'visible'){
+        text.style.visibility = 'hidden';
+        } else {
+            text.style.visibility = 'visible';
+        }
+    
+    }
+    </script>
+</body>
+</html>

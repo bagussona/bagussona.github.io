@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    
+</head>
+<body>
+    <a href="/eduwork/index.html">
+        <div class="arrow-back">
+            &#8592;
+        </div>
+    </a>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="header d-flex flex-column">
+                    <h1>Plugin JQuery Data Table</h1><br>
+                    <h5>Pake data array sendiri di looping</h5>
+                </div>
+            </div>
+        </div>
+        <div class="table-wrapper py-5 px-3 my-3">
+                <table id="table_id" class="display">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Harga</th>
+                        <th>Supplier</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+</body>
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+    </script>
+
+<script>
+
+    const tbody = document.querySelector('tbody');
+
+    const array_of_objects = [
+        {
+            "#": "1",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Chocho Pie",
+            "harga": 2500,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        },
+        {
+            "#": "2",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Nextar Chocho Brownies",
+            "harga": 2000,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        },
+        {
+            "#": "3",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Biskuat Bolu Coklat",
+            "harga": 2000,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        },
+        {
+            "#": "4",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Roma Sari Gandum",
+            "harga": 2000,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        },
+        {
+            "#": "5",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Beng Beng",
+            "harga": 1500,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        },
+        {
+            "#": "6",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Better",
+            "harga": 1000,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        },
+        {
+            "#": "7",
+            "image": "<img src=\"\" alt=\"#\">",
+            "product": "Super Star Snaps",
+            "harga": 1500,
+            "supplier": "wandi grosir",
+            "stock": "120 /Pcs"
+        }
+    ]
+
+    array_of_objects.map(obj => {
+        const rowTable = document.createElement('tr');
+        const idTable = document.createElement('td');
+        const imageTable = document.createElement('td');
+        const productTable = document.createElement('td');
+        const hargaTable = document.createElement('td');
+        const supplierTable = document.createElement('td');
+        const stockTable = document.createElement('td');
+        const test = [idTable, imageTable, productTable, hargaTable, supplierTable, stockTable];
+        
+        idTable.textContent = obj["#"];
+        imageTable.innerHTML = obj["image"];
+        productTable.textContent = obj["product"];
+        hargaTable.textContent = obj["harga"];
+        supplierTable.textContent = obj["supplier"];
+        stockTable.textContent = obj["stock"];
+        
+        for (const el of test) {
+            rowTable.appendChild(el)
+        } 
+        tbody.appendChild(rowTable);
+    });
+
+</script
+
+</html>

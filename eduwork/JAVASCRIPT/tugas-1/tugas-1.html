@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 7</title>
+    <title>Tugas 1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../style.css">
 </head>
@@ -26,23 +26,15 @@
                     <div class="content-wrapper">
                         <div class="diketahui">
                             <span><strong>Masukkan &#8594;</strong></span><br>
-                            <form action="" method="post">
                                 <input style="height: 40px; width: 16rem; margin: 10px 0;" type="number" placeholder="sisi" name="sisi" id="sisi">
-                                <input  type="submit" style="position: absolute; left: -9999px"/>
-                            </form>
+                                <input style="height: 40px; width: 16rem; margin: 10px 0; border: 0; background-color: rgb(66, 66, 255); color: #fff; cursor: pointer; " type="submit" onclick="hitungLuasPersegi()">
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="jawab">
                     <span><strong>Hasil <br></strong></span>
-                    <?php
-                        function hitungLuasPersegi($sisi = 0){
-                            $hasil = $sisi * $sisi;
-                            echo "$hasil";
-                        }
-                        hitungLuasPersegi($_POST['sisi']);
-                    ?>
+                    <input style="border: 0;" id="hasilPersegi" disabled>
                 </div>
             </div>
             <div class="content-2">
@@ -53,24 +45,16 @@
                     <div class="content-wrapper">
                         <div class="diketahui">
                             <span><strong>Masukkan &#8594;</strong></span><br>
-                            <form action="" method="post">
                                 <input style="height: 40px; width: 16rem; margin: 10px 0;" type="number" placeholder="panjang" name="panjang" id="panjang">
                                 <input style="height: 40px; width: 16rem;" type="number" name="lebar" placeholder="lebar" id="lebar">
-                                <input type="submit" style="position: absolute; left: -9999px"/>
-                            </form>
+                                <input style="height: 40px; width: 16rem; margin: 10px 0; border: 0; background-color: rgb(66, 66, 255); color: #fff; cursor: pointer;" type="submit" onclick="hitungLuasPersegiPanjang()">
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="jawab">
                     <span><strong>Hasil <br></strong></span>
-                    <?php
-                        function hitungLuasPersegiPanjang($p = 0, $l =0){
-                            $hasil = $p * $l;
-                            echo "$hasil";
-                        }
-                        hitungLuasPersegiPanjang($_POST['panjang'], $_POST['lebar']);
-                    ?>
+                    <input style="border: 0;" id="hasilPersegiPanjang" disabled>
                 </div>
             </div>
             <div class="content-3">
@@ -81,24 +65,16 @@
                     <div class="content-wrapper">
                         <div class="diketahui">
                             <span><strong>Masukkan &#8594;</strong></span><br>
-                            <form action="" method="post">
                                 <input style="height: 40px; width: 16rem; margin: 10px 0;" placeholder="alas" type="number" name="alas" id="alas">
                                 <input style="height: 40px; width: 16rem;" type="number" placeholder="tinggi" name="tinggi" id="tinggi">
-                                <input type="submit" style="position: absolute; left: -9999px"/>
-                            </form>
+                                <input style="height: 40px; width: 16rem; margin: 10px 0; border: 0; background-color: rgb(66, 66, 255); color: #fff; cursor: pointer;" type="submit" onclick="hitungLuasSegitiga()">
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="jawab">
                     <span><strong>Hasil <br></strong></span>
-                    <?php
-                        function hitungLuasSegitiga($a = 0, $t =0){
-                            $hasil = $a * $t / 2;
-                            echo "$hasil";
-                        }
-                        hitungLuasSegitiga($_POST['alas'], $_POST['tinggi']);
-                    ?>
+                    <input style="border: 0;" id="hasilSegitiga" disabled>
                 </div>
             </div>
             <div class="content-4">
@@ -109,24 +85,16 @@
                     <div class="content-wrapper">
                         <div class="diketahui">
                             <span><strong>Masukkan &#8594;</strong></span><br>
-                            <form action="" method="post">
                                 <input style="height: 40px; width: 16rem; margin: 10px 0;" placeholder="phi" readonly value="3.14" name="phi" type="number" id="phi">
                                 <input style="height: 40px; width: 16rem;" type="number" placeholder="jari-jari" name="r" id="r">
-                                <input type="submit" style="position: absolute; left: -9999px"/>
-                            </form>
+                                <input style="height: 40px; width: 16rem; margin: 10px 0; border: 0; background-color: rgb(66, 66, 255); color: #fff; cursor: pointer;" type="submit" onclick="hitungLuasLingkaran()">
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="jawab">
                     <span><strong>Hasil <br></strong></span>
-                    <?php
-                        function hitungLuasLingkaran($phi = 3.14, $r = 0){
-                            $hasil = $phi * $r * $r;
-                            echo "$hasil";
-                        }
-                        hitungLuasLingkaran($_POST['phi'], $_POST['r']);
-                    ?>
+                    <input style="border: 0;" id="hasilLingkaran" disabled>
                 </div>
             </div>
             <div class="content-5">
@@ -137,28 +105,69 @@
                     <div class="content-wrapper">
                         <div class="diketahui">
                             <span><strong>Masukkan &#8594;</strong></span><br>
-                            <form action="" method="post">
                                 <input style="height: 40px; width: 16rem; margin: 10px 0;" placeholder="alas" type="number" name="a" id="a">
                                 <input style="height: 40px; width: 16rem;" type="number" placeholder="tinggi" name="t" id="t">
-                                <input type="submit" style="position: absolute; left: -9999px"/>
-                            </form>
+                                <input style="height: 40px; width: 16rem; margin: 10px 0; border: 0; background-color: rgb(66, 66, 255); color: #fff; cursor: pointer;" type="submit" onclick="hitungLuasJajarGenjang()">
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="jawab">
                     <span><strong>Hasil <br></strong></span>
-                    <?php
-                        function hitungLuasJajaranGenjang($a = 0, $t = 0){
-                            $hasil = $a * $t;
-                            echo "$hasil";
-                        }
-                        hitungLuasJajaranGenjang($_POST['a'], $_POST['t']);
-                    ?>
+                    <input style="border: 0;" id="hasilJajarGenjang" disabled>
                 </div>
             </div>
         </div>
     </div>
     
 </body>
+
+<script>
+
+function hitungLuasPersegi() {
+    var sisi, hasil;
+
+    sisi = parseInt(document.getElementById('sisi').value);
+    hasil = sisi * sisi;
+    document.getElementById('hasilPersegi').value = hasil;
+}
+
+function hitungLuasPersegiPanjang() {
+    var panjang, lebar, hasil;
+
+    panjang = parseInt(document.getElementById('panjang').value);
+    lebar = parseInt(document.getElementById('lebar').value);
+    hasil = panjang * lebar;
+    document.getElementById('hasilPersegiPanjang').value = hasil;
+}
+
+function hitungLuasSegitiga() {
+    var alas, tinggi, hasil;
+
+    alas = parseInt(document.getElementById('alas').value);
+    tinggi = parseInt(document.getElementById('tinggi').value);
+    hasil = alas * tinggi / 2;
+    document.getElementById('hasilSegitiga').value = hasil;
+}
+
+function hitungLuasLingkaran() {
+    var phi, r, hasil;
+
+    phi = parseFloat(document.getElementById('phi').value);
+    r = parseInt(document.getElementById('r').value);
+    hasil = phi * r * r;
+    document.getElementById('hasilLingkaran').value = hasil;
+}
+
+function hitungLuasJajarGenjang() {
+    var a, t, hasil;
+
+    a = parseInt(document.getElementById('a').value);
+    t = parseInt(document.getElementById('t').value);
+    hasil = a * t;
+    document.getElementById('hasilJajarGenjang').value = hasil;
+}
+
+</script>
+
 </html>
