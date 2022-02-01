@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bagussona.github.io/static/css/main.8fa1b841.css",
-    "main.js": "/bagussona.github.io/static/js/main.de384ff1.js",
-    "static/js/787.bec93444.chunk.js": "/bagussona.github.io/static/js/787.bec93444.chunk.js",
-    "index.html": "/bagussona.github.io/index.html",
-    "main.8fa1b841.css.map": "/bagussona.github.io/static/css/main.8fa1b841.css.map",
-    "main.de384ff1.js.map": "/bagussona.github.io/static/js/main.de384ff1.js.map",
-    "787.bec93444.chunk.js.map": "/bagussona.github.io/static/js/787.bec93444.chunk.js.map"
+    "main.css": "/static/css/main.8fa1b841.css",
+    "main.js": "/static/js/main.7b657972.js",
+    "static/js/787.bec93444.chunk.js": "/static/js/787.bec93444.chunk.js",
+    "index.html": "/index.html",
+    "main.8fa1b841.css.map": "/static/css/main.8fa1b841.css.map",
+    "main.7b657972.js.map": "/static/js/main.7b657972.js.map",
+    "787.bec93444.chunk.js.map": "/static/js/787.bec93444.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fa1b841.css",
-    "static/js/main.de384ff1.js"
+    "static/js/main.7b657972.js"
   ]
 }
